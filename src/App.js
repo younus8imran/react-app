@@ -1,12 +1,16 @@
 import Pages from "./pages/Pages.jsx";
 import Category from "./components/Category";
+import { BrowserRouter } from "react-router-dom";
 
 
 export default function App() {
   return (
     <div className="App">
-      <Category />
-      <Pages />
+      <BrowserRouter>
+        <Category />
+        <Pages />        
+      </BrowserRouter>
+ 
       
     </div>
     );
